@@ -1,1 +1,260 @@
-first file edited 
+git commands
+
+
+hp@DESKTOP-UDARRCD MINGW64 ~
+$ cd onedrive
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive
+$ cd deskTOP
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP
+$ cd git
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP/git (master)
+$ touch f1.txt
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP/git (master)
+$ touch f2.txt
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP/git (master)
+$ notepad f2.txt
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP/git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        f1.txt
+        f1/
+        f2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP/git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        f1.txt
+        f2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP/git (master)
+$ git add .
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP/git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   f1.txt
+        new file:   f2.txt
+
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP/git (master)
+$ git commit -m "first time add txt file"
+[master (root-commit) 17c45a9] first time add txt file
+ 2 files changed, 1 insertion(+)
+ create mode 100644 f1.txt
+ create mode 100644 f2.txt
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP/git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP/git (master)
+$ git lo
+git: 'lo' is not a git command. See 'git --help'.
+
+The most similar commands are
+        log
+        flow
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP/git (master)
+$ git log
+commit 17c45a94ee9cc8d2a8a2a7f2c2c898d12cdf0a4d (HEAD -> master)
+Author: raj <rajcb227@gmail.com>
+Date:   Thu Jul 13 16:19:12 2023 +0530
+
+    first time add txt file
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP/git (master)
+$ touch f3.txt
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP/git (master)
+$ notepad f3.txt
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP/git (master)
+$ notepad f1.txt
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP/git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   f1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        f3.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP/git (master)
+$ git add f1.txt
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP/git (master)
+$ git commit -m "f1 file edited"
+[master 26a7b4c] f1 file edited
+ 1 file changed, 1 insertion(+)
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP/git (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        f3.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP/git (master)
+$ git add f3.txt
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP/git (master)
+$ git commit -m "f3 fie created "
+[master c839a42] f3 fie created
+ 1 file changed, 1 insertion(+)
+ create mode 100644 f3.txt
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP/git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP/git (master)
+$ git log --pretty=online
+fatal: invalid --pretty format: online
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP/git (master)
+$ git log --pretty=online
+fatal: invalid --pretty format: online
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP/git (master)
+$ git log --pretty=oneline
+c839a42b313f5f6e423ea55320be2a1dab4bfe56 (HEAD -> master) f3 fie created
+26a7b4c459b63e6a75be35805d54c1f9e78e0e76 f1 file edited
+17c45a94ee9cc8d2a8a2a7f2c2c898d12cdf0a4d first time add txt file
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP/git (master)
+$ notepd f2.txt
+bash: notepd: command not found
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP/git (master)
+$ notepad f2.txt
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP/git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   f2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP/git (master)
+$ git diff f2.txt
+diff --git a/f2.txt b/f2.txt
+index 1c59427..f45335b 100644
+--- a/f2.txt
++++ b/f2.txt
+@@ -1 +1 @@
+-second file
++second file in git file
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP/git (master)
+$ git add .
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP/git (master)
+$ git diff f2.txt
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP/git (master)
+$ git commit -m "f2 file edited "
+[master e37d644] f2 file edited
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP/git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP/git (master)
+$ git log --pretty=oneline
+e37d644fa0291ea9463fa14735c1ee36ac78c673 (HEAD -> master) f2 file edited
+c839a42b313f5f6e423ea55320be2a1dab4bfe56 f3 fie created
+26a7b4c459b63e6a75be35805d54c1f9e78e0e76 f1 file edited
+17c45a94ee9cc8d2a8a2a7f2c2c898d12cdf0a4d first time add txt file
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP/git (master)
+$ git ls-file
+git: 'ls-file' is not a git command. See 'git --help'.
+
+The most similar command is
+        ls-files
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP/git (master)
+$ git ls-files
+f1.txt
+f2.txt
+f3.txt
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP/git (master)
+$ git remove -cached f2.txt
+git: 'remove' is not a git command. See 'git --help'.
+
+The most similar command is
+        remote
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP/git (master)
+$ git rm -cached f2.txt
+error: did you mean `--cached` (with two dashes)?
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP/git (master)
+$ git rm --cached f2.txt
+rm 'f2.txt'
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP/git (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    f2.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        f2.txt
+
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP/git (master)
+$ git add .
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP/git (master)
+$ git rm f2.txt
+rm 'f2.txt'
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP/git (master)
+$ git ls-files
+f1.txt
+f3.txt
