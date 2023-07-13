@@ -258,3 +258,6 @@ hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/deskTOP/git (master)
 $ git ls-files
 f1.txt
 f3.txt
+
+$ git restore --staged f3.txt
+
