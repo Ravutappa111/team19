@@ -261,3 +261,54 @@ f3.txt
 
 $ git restore --staged f3.txt
 
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/desktop/git (master)
+$ git branch -m main
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/desktop/git (main)
+$ git remote add origin "https://github.com/Ravutappa111/team19.git"
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/desktop/git (main)
+$ git push  -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 19, done.
+Counting objects: 100% (19/19), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (19/19), 2.60 KiB | 296.00 KiB/s, done.
+Total 19 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/Ravutappa111/team19.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/desktop/git (main)
+$ git pull origin main
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 1.41 KiB | 85.00 KiB/s, done.
+From https://github.com/Ravutappa111/team19
+ * branch            main       -> FETCH_HEAD
+   320825e..de60104  main       -> origin/main
+Updating 320825e..de60104
+Fast-forward
+ assignment on python.py | 114 ++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 114 insertions(+)
+ create mode 100644 assignment on python.py
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/desktop/git (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+hp@DESKTOP-UDARRCD MINGW64 ~/onedrive/desktop/git (main)
+$ git --ls files
+unknown option: --ls
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--config-env=<name>=<envvar>] <command> [<args>]
